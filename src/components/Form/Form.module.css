@@ -1,0 +1,15 @@
+.textarea {
+  resize: none;
+  height: 200px;
+  font-size: 26px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+}
+.textarea::placeholder {
+  font-size: 30px;
+}
+.submitButton {
+  font-size: 26px;
+}

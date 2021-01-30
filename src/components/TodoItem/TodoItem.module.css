@@ -1,0 +1,13 @@
+.todo {
+  width: 300px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.textArea {
+  display: block;
+  max-width: 250px;
+  height: 150px;
+}
