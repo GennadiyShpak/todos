@@ -12,8 +12,8 @@ const TodoItem = ({ item }) => {
   const { id, header, text } = item;
   return (
     <li className={s.todo}>
-      <h2>{header}</h2>
-      <p className={s.textArea}>{text}</p>
+      <h2 className={s.todoTitle}>{header}</h2>
+      <span className={s.textArea}>{text}</span>
       <button
         type="button"
         onClick={() => {

@@ -1,3 +1,4 @@
 .todoList {
   display: flex;
+  flex-wrap: wrap;
 }

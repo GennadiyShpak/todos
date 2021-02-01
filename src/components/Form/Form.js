@@ -16,9 +16,16 @@ const Form = ({ onClose }) => {
     setTodo({ ...todo, [name]: value });
   };
   const onSubmitHandler = e => {
+    const { header, text } = todo;
     e.preventDefault();
-    onSubmit(todo);
-    onClose();
+
+    if (header === '' || text === '') {
+      alert('Some field are empty');
+      return;
+    } else {
+      onSubmit(todo);
+      onClose();
+    }
   };
   return (
     <form onSubmit={onSubmitHandler} className={s.form}>

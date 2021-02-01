@@ -11,7 +11,15 @@ const items = (state = [], { type, payload }) => {
     }
   }
 };
-const filter = (state = '', action) => state;
+const filter = (state = '', { payload, type }) => {
+  switch (type) {
+    case 'todos/filterTodo': {
+      return payload;
+    }
 
+    default:
+      return state;
+  }
+};
 const todos = combineReducers({ items, filter });
 export default todos;
