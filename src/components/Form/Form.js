@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { useCallback } from 'react';
 
-import todosActions from '../../redux/todos/todo-actions';
+import todosActions from '../../redux/todos-actions';
 import s from './Form.module.css';
 
 const Form = ({ onClose }) => {

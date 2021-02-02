@@ -1,13 +1,12 @@
 import { useSelector } from 'react-redux';
 
-import { getTodos, getFiltredName } from '../../redux/todos/todo-selectors';
+import { getFiltredName } from '../../redux/todos-selectors';
 import TodoItem from '../TodoItem/TodoItem';
 
 import s from './TodosView.module.css';
 
 const TodosView = () => {
-  const todos = useSelector(getTodos);
-  console.log(todos);
+  const todos = useSelector(getFiltredName);
   return (
     <ul className={s.todoList}>
       {todos.map(item => (

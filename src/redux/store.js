@@ -1,10 +1,11 @@
-import { combineReducers, createStore } from 'redux';
+import { createStore, combineReducers } from 'redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
 
-import todos from './todos/todo-reducers';
+import todos from './todos-reducers';
 
-const rootReducers = combineReducers({ todos });
+const rootReducer = combineReducers({
+  todos,
+});
 
-const store = createStore(rootReducers, composeWithDevTools());
-
+const store = createStore(rootReducer, composeWithDevTools());
 export default store;
