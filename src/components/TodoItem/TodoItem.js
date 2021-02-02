@@ -2,7 +2,7 @@ import { useDispatch } from 'react-redux';
 import { useCallback } from 'react';
 
 import s from './TodoItem.module.css';
-import todosActions from '../../redux/todos-actions';
+import todosActions from '../../redux/todos/todo-actions';
 
 const TodoItem = ({ item }) => {
   const dispatch = useDispatch();
